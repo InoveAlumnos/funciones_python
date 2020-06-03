@@ -112,7 +112,7 @@ def max_max():
     indice_offset = 0
     while True:
         try:
-            indice = lista.index(max_repeticiones, indice_offset)
+            indice = palabras.index(max_repeticiones, indice_offset)
             indice_offset = indice + 1
             indices.append(indice)
         except:
