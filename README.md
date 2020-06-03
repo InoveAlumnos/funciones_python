@@ -3,11 +3,14 @@ Inove Escuela de Código\
 info@inove.com.ar\
 Web: [Inove](http://inove.com.ar)
 
-# Bucles! [Python]
+# Funciones! [Python]
 En este repositorio encontrarán los siguientes archivos:
 
 __Ejemplos que el profesor mostrará en clase__\
 ejemplos_clase.py
+
+__Modulo de ejemplo creado para esta clase__\
+inovetools.py
 
 __Ejercicios para que el alumno desarrolle durante la clase__\
 ejercicios_clase.py
