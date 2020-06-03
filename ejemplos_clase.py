@@ -89,20 +89,20 @@ def recursivo():
 
 def max_max():
     # Ejemplo de diferentes formas de utilizar max
-    lista = ['vida', 'te', 'Inove', 'dia', 'te']
+    palabras = ['vida', 'te', 'Inove', 'dia', 'te']
 
     # Buscamos la palabra alfabéticamente mayor
-    max_alfabeticamente = max(lista)
+    max_alfabeticamente = max(palabras)
     print('La palabra alfabéticamente más grande:', max_alfabeticamente)
 
     # Buscamos la palabra con mayor cantidad de letras
-    max_tamaño = max(lista, key=len)
+    max_tamaño = max(palabras, key=len)
     print('La palabra más larga:', max_tamaño)
 
-    cantidad_max = lista.count('Max')
+    cantidad_max = palabras.count('Max')
 
     # Buscamos la palabra que más se repite
-    max_repeticiones = max(lista, key=lista.count)
+    max_repeticiones = max(palabras, key=palabras.count)
     print('La palabra con repetición en la lista', max_repeticiones)
 
     # Una forma de buscar los índices en donde aparecen
