@@ -16,6 +16,7 @@ __version__ = "1.2"
 def cantidad_letras(texto):
     return len(texto)
 
+
 def ordenar_palabras(lista_palabras, operador=1):
     ''' Ordenar palabras alfabeticamente
     o por cantidad de letras de mayor a menor
