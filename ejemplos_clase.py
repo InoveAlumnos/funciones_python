@@ -34,7 +34,7 @@ def incrementar(contador, paso=1):
     return contador
 
 
-def contexto():
+def marco():
     # Ejemplos de funciones y contexto
     contador = 3
 
@@ -72,21 +72,6 @@ def modulo():
     print('Inovetools version,', it.__version__)
 
 
-def cuenta_regresiva(numero):
-    numero -= 1
-    if numero > 0:
-        print(numero, '...', sep='', end='')
-        cuenta_regresiva(numero)
-    else:
-        print('Boom!')
-    print('Fin de la recursividad, numero', numero)
-
-
-def recursivo():
-    # Ejemplo de uso de funciones recursivas
-    cuenta_regresiva(4)
-
-
 def max_max():
     # Ejemplo de diferentes formas de utilizar max
     palabras = ['vida', 'te', 'Inove', 'dia', 'te']
@@ -111,10 +96,12 @@ def max_max():
     indices = []
     indice_offset = 0
     while True:
+        # Try se utiliza para "intentar" ejecutar una acción y evitar que el programa explote
         try:
             indice = palabras.index(max_repeticiones, indice_offset)
             indice_offset = indice + 1
             indices.append(indice)
+        # En vez de explotar el programa se ejecuta el "except"
         except:
             # Se terminó la lista
             break
@@ -123,9 +110,25 @@ def max_max():
           indices)
 
 
+def cuenta_regresiva(numero):
+    numero -= 1
+    if numero > 0:
+        print(numero, '...', sep='', end='')
+        cuenta_regresiva(numero)
+        print('Terminó la secuencia')
+    else:
+        print('Boom!')
+    print('Fin de la recursividad, numero', numero)
+
+
+def recursivo():
+    # Ejemplo de uso de funciones recursivas
+    cuenta_regresiva(4)
+
+
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    contexto()
+    marco()
     modulo()
-    recursivo()
     max_max()
+    recursivo()
