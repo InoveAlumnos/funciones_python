@@ -40,6 +40,20 @@ def ej1():
     Utilice esa función para calcular el promedio y luego
     imprima en pantalla el resultado
     '''
+    #print(random.sample(numeros, 2))  # probando algunas funciones
+    #print(numeros[random.randint(0,6)])
+    #print(random.choice(numeros))
+    longitud = len(numeros)
+    if longitud > 0:
+        minimo = min(numeros)
+        maximo = max(numeros)
+        suma = minimo + maximo
+        promedio = suma / 2
+        print(promedio)
+    elif longitud == 0:
+        print('No se puede obtener el promedio de una lista vacia\n')
+
+
 
 
 def ej2():
@@ -63,6 +77,29 @@ def ej2():
 
     Dicha función debe retornar la lista de elementos random generados.
     '''
+
+import random
+
+def lista_aleatorea(inicio, fin, cantidad):
+    azar = []
+    if inicio <= cantidad and cantidad >= fin:
+        azar= random.randrange(inicio, fin, cantidad)
+        print(azar)
+        return lista_aleatorea(inicio, fin, cantidad)
+    else:
+        print('Datos fuera de rango\n')
+        return
+
+
+def obtener():
+    azar = []
+    inicio = int(input('Ingrese el parametro inicio\n'))
+    fin = int(input('Ingrese el parametro fin\n'))
+    cantidad = int(input('Ingrese el parametro cantidad\n'))
+    numero = lista_aleatorea(inicio, fin, cantidad)
+    print(numero)
+
+ 
 
     # numeros = lista_aleatoria (inicio, fin, cantidad)
 
