@@ -213,9 +213,9 @@ def contar():
     numero = 0
     total = 0
     inicio = 1
-    fin = 25
+    fin = 9
     cantidad = 5
-    azar = lista_aleatorea(inicio, fin, cantidad)
+    azar = lista_aleatorea(inicio, fin+1, cantidad)
     while i < cantidad:
         numero = azar[i]
         repe = azar.count(numero)
