@@ -39,13 +39,39 @@ def obtener():
         print('Datos fuera de rango\n')
 
 def contar():
+    i = 0
+    numero = 0
+    total = 0
     inicio = 1
     fin = 9
-    rango = fin - inicio
     cantidad = 5
-    azar = lista_aleatorea(inicio, fin, cantidad)
-    repe = azar.count()
-    print(azar)
+    azar = lista_aleatorea(inicio, fin+1, cantidad)
+    while i < cantidad:
+        numero = azar[i]
+        repe = azar.count(numero)
+        print('El numero', numero, 'se repite', repe, 'veces')
+        total = total + repe
+        if total != cantidad:
+            i += 1
+        else:
+            if total == cantidad:
+                print(azar)
+                break
+    else:
+        if i == cantidad:
+            print(azar)
+
+
+def buscar():
+    i = 0
+    numero = 0
+    total = 0
+    inicio = 1
+    fin = 9
+    cantidad = 5
+    azar = lista_aleatorea(inicio, fin+1, cantidad)
+    
+
 
 
 if __name__ == '__main__':
