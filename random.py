@@ -62,7 +62,10 @@ def contar():
             print(azar)
 
 
-def buscar():
+def buscar():   # Aún no funciona
+    indice = []
+    indice_elemento = 0
+    indices = []
     i = 0
     numero = 0
     total = 0
@@ -70,6 +73,24 @@ def buscar():
     fin = 9
     cantidad = 5
     azar = lista_aleatorea(inicio, fin+1, cantidad)
+    print('Elementos generados por azar')
+    print(azar)
+    elegir = int(input('Número, entonces ubicación 1, Ubicación entonces número 2\n'))
+    if elegir == 1:
+        while i < cantidad:
+            elemento = int(input('Ingrese el número\n'))
+            indice_elemento = azar.index(elemento)
+            indices = indices.append(indice_elemento)
+            i += 1
+            print(indices)
+    if elegir == 2:
+        while i < cantidad:
+                indice_elemento = int(input('Ingrese indice\n'))
+                elemento = azar[indice_elemento]
+                i += 1
+                print(elemento)
+            
+    
     
 
 
@@ -77,4 +98,5 @@ def buscar():
 if __name__ == '__main__':
     lista_aleatorea(inicio, fin, cantidad)
     #obtener()
-    contar()
+    #contar()
+    buscar()

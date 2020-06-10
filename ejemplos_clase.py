@@ -126,6 +126,6 @@ def max_max():
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     contexto()
-    modulo()
-    recursivo()
-    max_max()
+    #modulo()
+    #recursivo()
+    #max_max()
