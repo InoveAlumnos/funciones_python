@@ -78,28 +78,52 @@ def ej2():
     Dicha función debe retornar la lista de elementos random generados.
     '''
 
+import math  
 import random
 
+azar = []
+print('Bien venido')
+inicio = 0
+fin = 0
+cantidad = 0
+azar = []
+
 def lista_aleatorea(inicio, fin, cantidad):
-    azar = []
-    if inicio <= cantidad and cantidad >= fin:
-        azar= random.randrange(inicio, fin, cantidad)
-        print(azar)
-        return lista_aleatorea(inicio, fin, cantidad)
+    i = 0
+    while i < cantidad:
+            azaroso= random.randrange(inicio, fin, cantidad)
+            azar.append(azaroso)
+            i += 1
     else:
-        print('Datos fuera de rango\n')
-        return
+        return azar
 
-
+            
 def obtener():
-    azar = []
     inicio = int(input('Ingrese el parametro inicio\n'))
     fin = int(input('Ingrese el parametro fin\n'))
+    rango = fin - inicio
     cantidad = int(input('Ingrese el parametro cantidad\n'))
-    numero = lista_aleatorea(inicio, fin, cantidad)
-    print(numero)
+    if cantidad <= rango and cantidad > 0:
+        azar = lista_aleatorea(inicio, fin, cantidad)
+        numero_1 = random.choice(azar)
+        numero_2 = random.choice(azar)
+        print('Numero 1', numero_1)
+        print('Numero 2', numero_2)
+        raiz_cuadrada_1 = math.sqrt(numero_1)
+        raiz_cuadrada_2 = math.sqrt(numero_2)
+        print('Raiz cuadrada de', numero_1, 'es', raiz_cuadrada_1)
+        print('Raiz cuadrada de', numero_2, 'es', raiz_cuadrada_2)
+        print('Lista random', azar)
+    else:
+        print('Datos fuera de rango\n')
 
- 
+    
+    
+if __name__ == '__main__':
+    lista_aleatorea(inicio, fin, cantidad)
+    obtener()
+
+    '''
 
     # numeros = lista_aleatoria (inicio, fin, cantidad)
 
@@ -122,7 +146,7 @@ def obtener():
 
     # raiz_cuadrada_1 = ....
     # raiz_cuadrada_2 = ....
-
+    '''
 
 def ej3():
     # Ejercicios de listas y métodos
@@ -137,8 +161,34 @@ def ej3():
     ya que al tratarce de una lista se pasa como referencia
     a la función (es decir que las modificaciones realizadas
     en la función afectan a la variable pasada como argumento)
-
     '''
+    
+import math
+
+numeros = []
+
+def ordenar(numeros):
+    numeros.sort(reverse=True)
+    return numeros
+
+
+def crear_lista():
+    numeros = []
+    cuantos = 0
+    cuantos = int(input('Cuantos numero desea ordenar\n'))
+    i = 0
+    while i < cuantos:
+        numero = int(input('Ingresar numero\n'))
+        numeros.append(numero)
+        i += 1
+    ordenar(numeros)
+    print(numeros)
+
+
+
+if __name__ == '__main__':
+    ordenar(numeros)
+    crear_lista()
 
 
 def ej4():
@@ -157,6 +207,34 @@ def ej4():
     "count"
 
     '''
+
+def contar():
+    i = 0
+    numero = 0
+    total = 0
+    inicio = 1
+    fin = 25
+    cantidad = 5
+    azar = lista_aleatorea(inicio, fin, cantidad)
+    while i < cantidad:
+        numero = azar[i]
+        repe = azar.count(numero)
+        print('El numero', numero, 'se repite', repe, 'veces')
+        total = total + repe
+        if total != cantidad:
+            i += 1
+        else:
+            if total == cantidad:
+                print(azar)
+                break
+    else:
+        if i == cantidad:
+            print(azar)
+
+
+if __name__ == '__main__':
+    lista_aleatorea(inicio, fin, cantidad)
+    contar()
 
     # Por ejemplo creo una lista de 5 elemtnos
     # lista_numeros = lista_aleatoria(...,...,cantidad_numeros)
@@ -190,8 +268,8 @@ def ej5():
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    ej1()
+    #ej1()
     #ej2()
     #ej3()
-    #ej4()
+    ej4()
     #ej5()
