@@ -20,11 +20,11 @@ import inovetools as it
 import inovetools
 from inovetools import cantidad_letras
 
-pi = math.pi
+global_pi = math.pi
 
 
 def superficie_circulo(radio):
-    return pi * (radio**2)
+    return global_pi * (radio**2)
 
 
 def incrementar(contador, paso=1):
@@ -34,7 +34,7 @@ def incrementar(contador, paso=1):
     return contador
 
 
-def marco():
+def ejemplos_contexto():
     # Ejemplos de funciones y contexto
     contador = 3
 
@@ -48,8 +48,7 @@ def marco():
 
     r = 2
     superficie = superficie_circulo(radio=r)
-    print('''La superficie de un circulo radio {}
-          es {:.2f}'''.format(r, superficie))
+    print('La superficie de un circulo radio {} es {:.2f}'.format(r, superficie))
 
     numero = -5
     print('El modulo de {} es {}'.format(numero, abs(numero)))
@@ -57,17 +56,23 @@ def marco():
 
 def modulo():
     # Ejemplo de uso de modulos
-    palabras = ['Inove', 'Python', 'escuela', 'codigo']
-    it.print_palabras_ordenadas(palabras)
+    lista_palabras = ['sol', 'casa', 'nubes']
+    lista_palabras.sort()
+    it.print_palabras_ordenadas(lista_palabras=lista_palabras)
 
-    palabra = palabras.pop()    # Extrae la última palabra
-    print('{}: Cantidad letras {}'.format(palabra,
-                                          cantidad_letras(palabra)))
+    print('2)Ordenar alfabéticamente de mayor a menor')
+    lista_palabras = ['sol', 'casa', 'nubes']
+    inovetools.ordenar_palabras(lista_palabras=lista_palabras)
+    inovetools.print_palabras_ordenadas(lista_palabras=lista_palabras)
 
-    inovetools.print_palabras_ordenadas(palabras)
-    palabra = palabras.pop(0)   # Extra la primera palabra, índice = 0
-    print('{}: Cantidad letras {}'.format(palabra,
-                                          cantidad_letras(palabra)))
+    print('3)Ordenar cantidad de letras de mayor a menor')
+    lista_palabras = ['sol', 'casa', 'nubes']
+    it.ordenar_palabras(lista_palabras=lista_palabras, operador=2)
+    it.print_palabras_ordenadas(lista_palabras=lista_palabras)
+
+    palabra = lista_palabras.pop(0)   # Extra la primera palabra, índice = 0
+    cant_letras_palabra = cantidad_letras(palabra)
+    print('{}: Cantidad letras {}'.format(palabra, cant_letras_palabra))
 
     print('Inovetools version,', it.__version__)
 
@@ -90,45 +95,33 @@ def max_max():
     max_repeticiones = max(palabras, key=palabras.count)
     print('La palabra con repetición en la lista', max_repeticiones)
 
-    # Una forma de buscar los índices en donde aparecen
-    # la palabra más repetida de la lista
-    # utilizando el método "index"
-    indices = []
-    indice_offset = 0
-    while True:
-        # Try se utiliza para "intentar" ejecutar una acción y evitar que el programa explote
-        try:
-            indice = palabras.index(max_repeticiones, indice_offset)
-            indice_offset = indice + 1
-            indices.append(indice)
-        # En vez de explotar el programa se ejecuta el "except"
-        except:
-            # Se terminó la lista
-            break
 
-    print('Ubicación de la palabra con mayor cantidad de letras:',
-          indices)
+def hola_mundo():
+    print('Hola Mundo!')
 
 
-def cuenta_regresiva(numero):
-    numero -= 1
-    if numero > 0:
-        print(numero, '...', sep='', end='')
-        cuenta_regresiva(numero)
-        print('Terminó la secuencia')
-    else:
-        print('Boom!')
-    print('Fin de la recursividad, numero', numero)
+def imprimir(mensaje):
+    print(mensaje)
 
 
-def recursivo():
-    # Ejemplo de uso de funciones recursivas
-    cuenta_regresiva(4)
+def numero_pi():
+    num_pi = 3.14159
+    return num_pi
 
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    marco()
+    # Ejemplos básicos
+    # Imprimir hola mundo en pantalla
+    hola_mundo()
+
+    # Imprimit un mensaje en pantalla
+    imprimir("mensaje")
+
+    # Ejemplo de función con retorno
+    # Retorna número pi
+    pi = numero_pi()
+
+    ejemplos_contexto()
     modulo()
     max_max()
-    recursivo()
