@@ -24,7 +24,8 @@ global_pi = math.pi
 
 
 def superficie_circulo(radio):
-    return global_pi * (radio**2)
+    supercie = global_pi * (radio**2)
+    return supercie
 
 
 def incrementar(contador, paso=1):
@@ -116,7 +117,7 @@ if __name__ == '__main__':
     hola_mundo()
 
     # Imprimit un mensaje en pantalla
-    imprimir("mensaje")
+    imprimir("mensajito")
 
     # Ejemplo de función con retorno
     # Retorna número pi
