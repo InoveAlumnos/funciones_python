@@ -12,11 +12,11 @@ ejemplos_clase.py
 __Modulo de ejemplo creado para esta clase__\
 inovetools.py
 
-__Ejercicios para que el alumno desarrolle durante la clase__\
-ejercicios_clase.py
+__Ejercicios para que el alumno desarrolle lo visto en clase__\
+ejercicios_practica.py
 
 __Ejercicios para que el alumno profundice sobre el tema durante la semana__\
-ejercicios_practica.py
+ejercicios_profundizacion.py
 
 # Consultas
 alumnos@inove.com.ar
