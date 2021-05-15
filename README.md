@@ -4,19 +4,16 @@ info@inove.com.ar\
 Web: [Inove](http://inove.com.ar)
 
 # Funciones! [Python]
-En este repositorio encontrarán los siguientes archivos:
+En este repositorio encontrarán las siguientes carpetas:
 
 __Ejemplos que el profesor mostrará en clase__\
-ejemplos_clase.py
-
-__Modulo de ejemplo creado para esta clase__\
-inovetools.py
+ejemplos_clase/
 
 __Ejercicios para que el alumno desarrolle lo visto en clase__\
-ejercicios_practica.py
+ejercicios_practica/
 
 __Ejercicios para que el alumno profundice sobre el tema durante la semana__\
-ejercicios_profundizacion.py
+ejercicios_profundizacion/
 
 # Consultas
 alumnos@inove.com.ar
