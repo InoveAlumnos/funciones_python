@@ -78,5 +78,5 @@ import random
 if __name__ == '__main__':
     print("¡El juego de la generala!")
     # A partir de aquí escriba el código que
-    # invoca al as funciones y resuelve el enunciado
+    # invoca a las funciones y resuelve el enunciado
     # Leer el enunciado con atención y consultar cualquier duda
