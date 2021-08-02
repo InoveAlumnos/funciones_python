@@ -8,6 +8,8 @@
 
 def ej1():
     # Ejercicios de práctica numérica
+    # Las variables n1, n2 y suma solo existen dentro
+    # de esta función "eje1"
     n1 = 5
     n2 = -2.5
     suma = n1 + n2
@@ -16,6 +18,8 @@ def ej1():
 
 def ej2():
     print("Ejercicios de strings")
+    # Las variables t1 y t2 solo existen dentro
+    # de esta función "eje2"
     t1 = 'Hola'
     t2 = 'Mundo'
     print(t1, t2)
