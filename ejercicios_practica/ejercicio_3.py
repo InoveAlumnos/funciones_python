@@ -20,7 +20,7 @@
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     
-    numeros = [2, 4, 6, 8, 10, 12]
+    numeros = [2, 4, 10, 8, 12, 6]
 
     # Alumno: Crear la función "ordenar"
 
@@ -29,17 +29,12 @@ if __name__ == '__main__':
     # Debe recibir 1 parámetro que es la lista de números
     # y retornar la nueva lista ordenada (muy simular a la función promedio)
 
-
     # Dentro de la función puede ordenar la lista
     # usando la funciones nativas de Python "sort"
-
-    # Aproveche el ejemplo de "promedio" para crear una función
-    # similar, la debe crear y escribir abajo de ella.
 
     # Luego de crear la función invocarla en este lugar:
 
     # lista_ordenada = ordenar(numeros)
-
 
     # Imprimir en pantalla "lista_ordenada" que tendrá
     # los valores retornado por la función ordenar:
