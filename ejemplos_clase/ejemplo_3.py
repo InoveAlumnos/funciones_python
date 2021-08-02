@@ -50,6 +50,7 @@ if __name__ == '__main__':
     # Imprimir mi nombre completo
     imprimir_nombre(apellido='Escuela')
 
+    print("terminamos")
     
 
 
