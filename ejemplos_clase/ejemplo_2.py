@@ -25,6 +25,7 @@ if __name__ == '__main__':
     # Calcular la superficie de un círculo
     # la función retorna el resultado
     superficie = superficie_circulo(4)
+    # superficie es el valor que retorna "superficie_circulo"
     print("Superficie del círculo:", superficie)
 
 
