@@ -14,6 +14,7 @@ version = 'v2.0'
 def uso_variables():
     # Variable local que solo existe
     # dentro de esta función
+    global version
     author = 'Inove'
     print("Programa escrito por", author, "version", version)
 
