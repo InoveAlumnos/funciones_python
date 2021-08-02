@@ -38,7 +38,7 @@ if __name__ == '__main__':
     # lista_numeros = lista_aleatoria(inicio, fin, cantidad)
 
     # Generar una una nueva funcion que se llame "contar",
-    #que cuenta la cantidad de veces que un elemento pasado
+    # que cuente la cantidad de veces que un elemento pasado
     # por parámetro se repite en la lista también pasada por parámetro
     
     # Para saber cuantas veces se repiten el elemento pasado
