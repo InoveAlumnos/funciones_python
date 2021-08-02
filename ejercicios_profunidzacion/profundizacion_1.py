@@ -27,28 +27,28 @@ sacados en esa tirada de de dados (son 5 dados, cada uno del número 1 al 6)
 
 1) El jugador tira la dados y saca 5 números aleatorios, puede usar
 la función de "lista_aleatoria" para generar dichas lista de números.
-Esa lista de datos se llamará dados_tirados
+Esa lista de datos se llamará "dados_tirados"
+Lista "dados_tirados" se utiliza para guardar 5 dados, cada dado es de 6 caras,
+es decir que cada dado puede valer un número de 1 a 6.
 
 2) Luego debe analizar los 5 números y ver cual es el número que
 más se repitio entre los 5 dados.
 Debe usar la función de Python "max" con la "key" de list.count para
-determinar cual fue el número que más se repitió. Consultar los ejemplos
-vistos en clase en donde se realizó esta operación con "max"
+determinar cual fue el número que más se repitió en esa tirada. 
+Consultar los ejemplos vistos en clase en donde se realizó esta operación con "max"
 
 3) Una vez reconocido el número más repetido entre los 5 dados,
-debe guardar en una lista aparte esos números más repetidos.
-Si por ejemplo salió 4-4-2-1-4, debe quedarse con esos tres "4"
-Debe extrarlos de la lista, quedándole una lista separada
-dados_guardados = [4,4,4]
-Debe realizar un bucle para recorrer la lista de dados_tirados
-y guardar los "4" en nuestra nueva lista dados_guardados
-Utilie append para ir sumando a dados_guardados los valores
+debe guardar en una variable aparte llamda "contador_generala"
+cuantas veces se repitió hasta ahora el número más repetido. 
+Ese número será el candidato para busscar sacar generala.
+Si por ejemplo salió 4-4-2-1-4, debe quedarse con esos tres "4",
+por lo canto el "contador_generala" valdrá 3, porque el primer número
+más repetido fue 4, y este número salio tres veces en la primera tirada.
 
 4) Debe volver a tira los dados, generar nuevos
 números aleatorios.
-Si en la lista "dados_guardados" tengo 3 dados guardados
-significa que ahora deberé tirar solo dos dados. Puede usar la función
-"len" para ver cuantos elementos hay en "dados_guardados"
+Si en el contador "contador_generala" tengo 3 dados guardados
+significa que ahora deberé tirar solo dos dados (5-3). 
 Es decir que en este caso debería generar solo dos números
 aleatorios nuevos con "lista_aleatoria"
 Ahora tendré una nueva lista de "dados_tirados", en este caso
@@ -57,13 +57,18 @@ tirados.
 
 5) Luego de tirar nuevamente los datos en el paso anterior,
 por ejemplo digamos que salieron los números: 4-1
-Debo volver a quedarme con el "4" ya que es el número que estoy
-buscando almacenar en la otra lista de "dados_guardados".
-Sino salió el "4" vuelvo a tirar todos los dados (solo 2 dados en este caso)
-Si salió un "4" me lo quedo y lo guardo en "dados_guardados".
+Debo volver a contar cuantas veces aparece el número "4",
+ya que es el número que estoy buscando almacenar para llegar a generala.
+Se deberá aumentar el contador por cada cuatro que haya salido en la tirada.
+Sino salió el "4" vuelvo a tirar sin aumentar el contador (repetir el punto 4)
 
-5) Debe repetir este proceso hasta que en su lista de "dados
-guardados" tenga "generala", es decir, 5 números iguales.
+5) Debe repetir este proceso hasta que el contador "contador_generala"
+haya llegado a 5, es decir, he sacado 5 números iguales
+
+NOTA: Recordar que en este ejemplo se buscó alcanzar la generala con "4" porque
+fue el primero número más repetido en la primera tirada. Tener eso en cuenta que el
+número que deberá buscar para alcanzar la generala depende de cual fue el más repetido
+en la primera tirada.
 '''
 
 import random
