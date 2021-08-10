@@ -12,8 +12,8 @@ def imprimir_nombre(nombre, apellido):
 
 
 def superficie_circulo(radio):
-    supercie = 3.14 * (radio**2)
-    return supercie
+    resultado = 3.14 * (radio**2)
+    return resultado
 
 
 if __name__ == '__main__':
