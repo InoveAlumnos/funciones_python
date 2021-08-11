@@ -23,6 +23,8 @@ def ordenar_palabras(lista_palabras, operador):
         # lista_palabras.sort(reverse=True, key=cantidad_letras)
     else:
         print('Operador ingresado', operador, 'incorrecto, ingrese 1 o 2')
+        
+    print(lista_palabras)
 
 
 def max_max(lista_palabras):
@@ -53,7 +55,7 @@ def max_max(lista_palabras):
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
 
-    lista_palabras = ['vida', 'te', 'Inove', 'dia', 'te']
+    lista_palabras = ['vida', 'te', 'inove', 'dia', 'te']
 
     # Cuantas letras tiene cada palabra en la lista?
     cantidad_letras(lista_palabras)
