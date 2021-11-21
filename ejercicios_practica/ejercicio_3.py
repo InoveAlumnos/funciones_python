@@ -2,7 +2,7 @@
 # Ejercicios de práctica
 
 # Autor: Inove Coding School
-# Version: 2.0
+# Version: 2.2
 
 # IMPORTANTE: NO borrar los comentarios
 # que aparecen en verde con el hashtag "#"
@@ -11,8 +11,7 @@
 
 # --------------------------------
 # Aquí dentro definir la función ordenar
-#def ordenar (numeros):
-
+# def ordenar(lista):
 
 # --------------------------------
 
@@ -27,10 +26,10 @@ if __name__ == '__main__':
     # Generar una una nueva funcion que se llame "ordenar",
     # que utilizaremos para odernar la lista de numeros.
     # Debe recibir 1 parámetro que es la lista de números
-    # y retornar la nueva lista ordenada (muy simular a la función promedio)
+    # y retornar la nueva lista ordenada (igual a lo visto en clase)
 
     # Dentro de la función puede ordenar la lista
-    # usando la funciones nativas de Python "sort"
+    # usando la funciones nativas de Python "sorted"
 
     # Luego de crear la función invocarla en este lugar:
 

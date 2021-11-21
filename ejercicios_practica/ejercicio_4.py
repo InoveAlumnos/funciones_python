@@ -2,16 +2,17 @@
 # Ejercicios de práctica
 
 # Autor: Inove Coding School
-# Version: 2.0
+# Version: 2.2
 
 # IMPORTANTE: NO borrar los comentarios
 # que aparecen en verde con el hashtag "#"
 
-# Ejercicios con funciones y módulos
-import random
+# Ejercicios con funciones
 
 # --------------------------------
-# Aquí dentro definir la función lista_aleatoria
+# Aquí dentro definir la función que solicitará
+# el nombre de tres invitados
+# def generar_invitados():
 
 
 # --------------------------------
@@ -20,45 +21,27 @@ import random
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     
-    inicio = 0
-    fin = 10
-    cantidad = 5
+    # Alumno: Crear la función "generar_invitados"
 
-    # Alumno: Crear la función "lista_aleatoria"
+    # Dentro de esa función el sistema deberá solicitar
+    # al usuario por consola que ingrese tres nombres de 
+    # tres invitados.
+    # IMPORTANTE: Utilizar un "input" por cada invitado
+    # que se solicite ingresar
 
-    # Para este ejercicio utilizaremos el módulo random
-    # Ejemplo de como obtener un numero aleatorio
-    # entre inicio y fin
-    # inicio <= numero <= fin
-    numero = random.randrange(inicio, fin+1)
-    # Documentación oficial de random
-    # https://docs.python.org/3.7/library/random.html
-    # Ante cualquier duda preguntar en el campus!
+    # Los tres nombres ingresados se deberán guardar en
+    # una lista
 
-    # Realice una funcion llamada "lista_aleatoria" la cual
-    # reciba como parámetro el rango de aceptación de la lista
-    # "inicio y fin" y la cantidad de elementos que deseamos que
-    # contenga la lista, es decir, la cantidad de elementos random a generar.
+    # La función generar_invitados deberá retornar
+    # la lista de invitados generados
 
-    # def lista_aleatoria (inicio, fin, cantidad)
-
-    # Para ello dentro de la función deberá realizar un bucle que repita "cantidad"
-    # veces esta operacion:
-    # numero = random.randrange(inicio, fin+1)
-
-    # Cada valor generado lo debe guardar en una lista, recuerde:
-    # 1) Iniciar y crear esa lista vacia.
-    # 2) Para agregar nuevos elementos en la lista utiliza "append"
-
-    # Finalmente dicha función debe retornar la lista de elementos random generados.
+    # NOTA: Recomendamos utilizar bucles para no repetir código
+    # y solicitar los 3 invitiados, uno en cada iteración del bucle
 
     # Luego de crear la función invocarla en este lugar:
 
-    # mi_lista_aleatoria = lista_aleatoria(inicio, fin, cantidad)
+    # lista_invitados = generar_invitados()
 
-    # Imprimir en pantalla "mi_lista_aleatoria" que tendrá
-    # los valores retornado por la función lista_aleatoria:
-
-    # print(mi_lista_aleatoria)
+    # Imprimir en pantalla "lista_invitados":
 
     print("terminamos")

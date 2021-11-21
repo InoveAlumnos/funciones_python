@@ -2,61 +2,47 @@
 # Ejercicios de práctica
 
 # Autor: Inove Coding School
-# Version: 2.0
+# Version: 2.2
 
 # IMPORTANTE: NO borrar los comentarios
 # que aparecen en verde con el hashtag "#"
 
-# Ejercicios con funciones y módulos
-import random
+# Ejercicios con funciones
 
 # --------------------------------
-# Aquí dentro definir la función contar
-
-
-
-# Aquí copiar la función lista_aleatoria
+# Aquí copiar la función "generar_invitados"
 # ya elaborada
 
-
 # --------------------------------
 
+# --------------------------------
+# Aquí copiar la función "ordenar"
+# ya elaborada
+
+# --------------------------------
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    
-    inicio = 0
-    fin = 9
-    cantidad = 5
 
-    # Alumno: Crear la función "contar"
+    # Alumno: Copiar las funciones "generar_invitados" y "ordenar"
+    # creadas en los ejercicios anteriores
+    # Deberá copiarlas fuera del bucle "__main__" como se detalla
+    # al comienzo del archivo
+    # --> El objetivo es generar una lista de invitados y ordenala
 
-    # Utilice la función "lista_aleatoria"  creado antes 
-    # para generar una lista de 5 números en
-    # un rango de 1 a 9 inclusive
+    # Luego de copiar las funciones, invocarla en este lugar:
 
-    # lista_numeros = lista_aleatoria(inicio, fin, cantidad)
+    # 1) Primero generar una lista de invitados con "generar_invitados"
+    #    Almacenar el resultado en "lista_invitados"
 
-    # Generar una una nueva funcion que se llame "contar",
-    # que cuente la cantidad de veces que un elemento pasado
-    # por parámetro se repite en la lista también pasada por parámetro
-    
-    # Para saber cuantas veces se repiten el elemento pasado
-    # en la lista pueden usar el método nativo de list "count"
+    # lista_invitados = generar_invitados()
 
-    # Por ejemplo creo una lista de 5 elemtnos
-    
-    # Luego quiero averiguar cuantas veces se repite el numero 3
-    # cantidad_tres = contar(lista_numeros, 3)
+    # 2) Luego ordenar la lista de invitados con "ordenar"
+    #    --> Pasar como parámetro la "lista_invitados"
+    #    --> Retornar la lista de invitados ordenada
 
-    # Luego de crear la función invocarla en este lugar:
-    # Averiguar cuantas veces se repite el numero 3
+    # lista_invidatos_ordenada = ordenar(lista_invitados)
 
-    # cantidad_tres = contar(lista_numeros, 3)
-
-    # Imprimir en pantalla "cantidad_tres" que informa
-    # cuantas veces se repite el tres en la lista
-
-    # print(cantidad_tres)
+    # Imprimir en pantalla "lista_invidatos_ordenada":
 
     print("terminamos")

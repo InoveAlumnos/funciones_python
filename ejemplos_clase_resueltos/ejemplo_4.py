@@ -22,7 +22,9 @@ def ordenar_menor_mayor(lista_productos):
 # se ordenen de mayor a menor
 
 # def ordenar_mayor_menor (lista_productos):
-
+def ordenar_mayor_menor(lista_productos):
+    precios_ordenados = sorted(lista_productos, reverse=True)
+    return precios_ordenados
 # --------------------------------
 
 if __name__ == '__main__':
@@ -47,9 +49,9 @@ if __name__ == '__main__':
     # dentro de la función "sorted" para que los resulados
     # se ordenen de mayor a menor
 
-    # precio_mayor_menor = ordenar_mayor_menor(productos)
-    # print("Lista de precios ordenada de mayor a menor:")
-    # print(precio_mayor_menor)
+    precio_mayor_menor = ordenar_mayor_menor(productos)
+    print("Lista de precios ordenada de mayor a menor:")
+    print(precio_mayor_menor)
 
     print("terminamos")
 
