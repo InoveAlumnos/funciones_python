@@ -39,11 +39,11 @@ def precio_productos(cantidad_productos):
 # --------------------------------
 
 # --------------------------------
-# Aquí dentro definir la función "calcular_precio_max"
-# def calcular_precio_max(lista_productos):
-def calcular_precio_max(lista_productos):
-    precio_max = max(lista_productos)
-    return precio_max
+# Aquí dentro definir la función "calcular_precio_total"
+# def calcular_precio_total(lista_productos):
+def calcular_precio_total(lista_productos):
+    precio_total = sum(lista_productos)
+    return precio_total
 # --------------------------------
 
 if __name__ == '__main__':
@@ -65,13 +65,13 @@ if __name__ == '__main__':
     # productos = precio_productos(....)
     productos = precio_productos(cantidad)
 
-    # 3) Obtener el precio más alto de la lista
-    # precio_alto = calcular_precio_max(....)
-    precio_alto = calcular_precio_max(productos)
+    # 3) Obtener el precio total de la compra
+    # precio_alto = calcular_precio_total(....)
+    precio_total = calcular_precio_total(productos)
 
-    # 4) Imprimir en pantalla el precio de producto más alto
+    # 4) Imprimir en pantalla el precio total de la compra
     # print(...)
-    print("El precio más alto ingresado fue:", precio_alto)
+    print("El precio más alto ingresado fue:", precio_total)
 
     print("terminamos")
 
