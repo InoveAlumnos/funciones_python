@@ -48,7 +48,7 @@ if __name__ == '__main__':
     # productos = precio_productos(....)
 
     # 3) Obtener el precio total de la compra
-    # precio_alto = calcular_precio_total(....)
+    # precio_total = calcular_precio_total(....)
 
     # 4) Imprimir en pantalla el precio total de la compra
     # print(...)
