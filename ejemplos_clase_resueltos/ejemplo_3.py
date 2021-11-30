@@ -8,8 +8,8 @@
 # de la funcion "sum" de python
 
 def calcular_precio_total(lista_productos):
-    precio_max = sum(lista_productos)
-    return precio_max
+    precio_total = sum(lista_productos)
+    return precio_total
 
 
 def calcular_precio_total_bucle(lista_productos):
