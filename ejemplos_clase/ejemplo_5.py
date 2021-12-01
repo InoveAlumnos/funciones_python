@@ -41,7 +41,7 @@ if __name__ == '__main__':
     # simular la compra de 4 productos
 
     # 1) Primero obtener la cantidad de productos comprados
-    # cantidad = cantidad_pruductos....
+    # cantidad = cantidad_productos....
 
     # 2) Obtener el precio de cada producto comprado
     # en una lista de "productos"
