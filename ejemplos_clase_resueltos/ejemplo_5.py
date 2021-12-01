@@ -9,7 +9,7 @@
 # *****************************
 #       PROFESOR LIVE CODE
 # *****************************
-# Debe copiar de los ejemplos de clase anteriores
+# Debe copiar de los ejemplos anteriores
 # cada unas de las funciones que se detallan
 
 # --------------------------------
