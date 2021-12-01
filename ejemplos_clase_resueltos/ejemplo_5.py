@@ -57,7 +57,7 @@ if __name__ == '__main__':
     # simular la compra de 4 productos
 
     # 1) Primero obtener la cantidad de productos comprados
-    # cantidad = cantidad_pruductos....
+    # cantidad = cantidad_productos....
     cantidad = cantidad_productos()
 
     # 2) Obtener el precio de cada producto comprado
@@ -66,7 +66,7 @@ if __name__ == '__main__':
     productos = precio_productos(cantidad)
 
     # 3) Obtener el precio total de la compra
-    # precio_alto = calcular_precio_total(....)
+    # precio_total = calcular_precio_total(....)
     precio_total = calcular_precio_total(productos)
 
     # 4) Imprimir en pantalla el precio total de la compra
