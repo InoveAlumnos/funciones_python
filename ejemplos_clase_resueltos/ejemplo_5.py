@@ -71,7 +71,7 @@ if __name__ == '__main__':
 
     # 4) Imprimir en pantalla el precio total de la compra
     # print(...)
-    print("El precio más alto ingresado fue:", precio_total)
+    print("El precio total de la compra es:", precio_total)
 
     print("terminamos")
 
