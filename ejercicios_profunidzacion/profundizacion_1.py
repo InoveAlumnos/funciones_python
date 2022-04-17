@@ -38,7 +38,7 @@ def lista_aleatoria (inicio, fin, cantidad)
 
 Para ello dentro de la función deberá realizar un bucle que repita "cantidad"
 veces esta operacion:
-numero = random.randrange(inicio, fin+1)
+numero = random.randint(inicio, fin)
 
 Cada valor generado lo debe guardar en una lista, recuerde:
 1) Iniciar y crear esa lista vacia.
