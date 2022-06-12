@@ -49,15 +49,11 @@ en la lista pueden usar el método nativo de list "count"
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     
-    inicio = 0
-    fin = 10
-    cantidad = 5
-
     # Alumno: Utilizar la función "lista_aleatoria"
     # para que genere una lista de 5 números que esten comprendidos
     # entre los números 1 al 6 inclusive
 
-    # lista_numeros = lista_aleatoria()
+    # lista_numeros = lista_aleatoria(...)
 
     # Imprimir en pantalla "lista_numeros" que tendrá
     # los valores retornado por la función "lista_aleatoria":
