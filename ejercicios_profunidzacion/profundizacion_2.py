@@ -2,7 +2,7 @@
 # Ejercicios de profundización
 
 # Autor: Inove Coding School
-# Version: 2.2
+# Version: 3.0
 
 # NOTA: 
 # Estos ejercicios son de mayor dificultad que los de clase y práctica.
@@ -17,17 +17,20 @@ import random
 
 '''
 Enunciado:
-Alumno: Crear la función "contar"
-
-Utilice la función "lista_aleatoria" creada antes 
+Crear la función "contar"
+Utilizar la función "lista_aleatoria" creada antes 
 para generar una lista de 5 números en
 un rango de 1 a 6 inclusive
 
 lista_numeros = lista_aleatoria(inicio, fin, cantidad)
 
-Generar una una nueva funcion que se llame "contar",
+Alumno:
+- Generar una una nueva funcion que se llame "contar",
 que cuente la cantidad de veces que un número (pasado
-por parámetro a la función) se repite en la lista (también pasada por parámetro)
+por parámetro a la función) se repite en la lista
+(también pasada por parámetro)
+- Primer parámetro --> número a buscar y contar
+- Segundo parámetro --> la lista de números
 
 Para saber cuantas veces se repiten el elemento pasado
 en la lista pueden usar el método nativo de list "count"

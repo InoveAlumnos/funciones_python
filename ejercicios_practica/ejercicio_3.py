@@ -2,14 +2,19 @@
 # Ejercicios de práctica
 
 # Autor: Inove Coding School
-# Version: 2.2
+# Version: 3.0
 
 # IMPORTANTE: NO borrar los comentarios
 # que aparecen en verde con el hashtag "#"
 
 # Ejercicios con funciones
 
+# Objetivo:
+# Crear una función que ordene los números ingresados
+# dentro de una lista.
+
 # --------------------------------
+# Alumno:
 # Aquí dentro definir la función ordenar
 # def ordenar(lista):
 
@@ -31,7 +36,9 @@ if __name__ == '__main__':
     # Dentro de la función puede ordenar la lista
     # usando la funciones nativas de Python "sorted"
 
-    # Luego de crear la función invocarla en este lugar:
+    # Luego de crear la función invocarla en este lugar,
+    # almacenar el valor de retorno en una variable
+    # llamada "lista_ordenada"
 
     # lista_ordenada = ordenar(numeros)
 

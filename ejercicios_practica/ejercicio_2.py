@@ -2,12 +2,16 @@
 # Ejercicios de práctica
 
 # Autor: Inove Coding School
-# Version: 2.2
+# Version: 3.0
 
 # IMPORTANTE: NO borrar los comentarios
 # que aparecen en verde con el hashtag "#"
 
 # Ejercicios con funciones
+
+# Objetivo:
+# Completar el funcionamiento de la función "promedio", evitar
+# que el sistema explote si la lista de numeros entregada es vacia
 
 def promedio(numeros):
     print("Funcion promedio")
@@ -25,7 +29,8 @@ def promedio(numeros):
 
     # La función debe retornar (return) el promedio calculado
     # La función debe contemplar si se le pasa una lista vacia
-    # (es decir, de "0" elementos)
+    # (es decir, de "0" elementos), en ese caso se debe
+    # retornar como promedio 0 y evitar que explote el programa
 
     return resultado
 
@@ -35,9 +40,9 @@ if __name__ == '__main__':
     
     numeros = [2, 4, 6, 8, 10, 12]
 
-    # Alumno: Complete la función "promedio"
-
+    # Alumno:
     # Llamar a la función en este lugar y capturar el valor del retorno
+    # en una variable llamada resultado_promedio
     resultado_promedio = promedio(numeros)
 
     # Luego imprimir en pantalla el valor resultante:

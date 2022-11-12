@@ -2,14 +2,18 @@
 # Ejercicios de práctica
 
 # Autor: Inove Coding School
-# Version: 2.2
+# Version: 3.0
 
 # IMPORTANTE: NO borrar los comentarios
 # que aparecen en verde con el hashtag "#"
 
 # Ejercicios con funciones
 
+# Objetivo: Crear una función que pida valores
+# por consola
+
 # --------------------------------
+# Alumno:
 # Aquí dentro definir la función que solicitará
 # el nombre de tres invitados
 # def generar_invitados():
@@ -33,7 +37,8 @@ if __name__ == '__main__':
     # una lista
 
     # La función generar_invitados deberá retornar
-    # la lista de invitados generados
+    # la lista de invitados generados, el valor de retorno
+    # se debe almacenar en una variable llamada "lista_invitados"
 
     # NOTA: Recomendamos utilizar bucles para no repetir código
     # y solicitar los 3 invitiados, uno en cada iteración del bucle
