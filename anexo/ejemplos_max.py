@@ -23,13 +23,13 @@ def max_con_palabras(lista_palabras):
     # Con count podemos contar cuantas veces
     # aparece "te" en la lista de palabras
     cantidad_max = lista_palabras.count('te')
-    print('La palabra "te" aparece {} veces'.format(cantidad_max))
+    print(f'La palabra "te" aparece {cantidad_max} veces')
 
     # Buscamos la palabra que más se repite en la lista
     # cambiando el criterio de búsqueda "key" por el función
     # count que se aprovechó antes.
     max_repeticiones = max(lista_palabras, key=lista_palabras.count)
-    print('La palabra con más repetición en la lista es "{}"'.format(max_repeticiones))
+    print(f'La palabra con más repetición en la lista es {max_repeticiones}')
 
 
 def max_con_numeros(lista_numeros):
@@ -42,11 +42,11 @@ def max_con_numeros(lista_numeros):
     # Con count podemos contar cuantas veces
     # aparece un número en la lista
     cantidad_de_5 = lista_numeros.count(5)
-    print('El número "cinco" aparece {} veces'.format(cantidad_de_5))
+    print(f'El número "cinco" aparece {cantidad_de_5} veces')
 
     # Buscamos el número que más veces se repite en la lista
     max_repeticiones = max(lista_numeros, key=lista_numeros.count)
-    print('El número con más repetición en la lista es "{}"'.format(max_repeticiones))
+    print(f'El número con más repetición en la lista es {max_repeticiones}')
 
 
 if __name__ == '__main__':
