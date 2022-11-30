@@ -34,7 +34,7 @@ if __name__ == '__main__':
     # creadas en los ejercicios anteriores
     # Deberá copiarlas fuera del bloque "__main__" como se detalla
     # al comienzo del archivo
-    # --> El objetivo es generar una lista de invitados y ordenala
+    # --> El objetivo es generar una lista de invitados y ordenarla
 
     # Luego de copiar las funciones, invocarla en este lugar:
 

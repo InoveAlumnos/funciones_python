@@ -25,7 +25,8 @@
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     
-    # Alumno: Crear la función "generar_invitados"
+    # Alumno: Crear la función "generar_invitados" fuera del bloque
+    # condicional principal (ver arriba los comentarios)
 
     # Dentro de esa función el sistema deberá solicitar
     # al usuario por consola que ingrese tres nombres de 

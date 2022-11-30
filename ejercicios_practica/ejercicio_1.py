@@ -12,6 +12,12 @@
 # Objetivo:
 # Completar el funcionamiento de la función "imprimir_mayor"
 
+# Alumno importate --> la función imprimir_mayor
+# ya está creada y se invoca en el bloque principal del bloque
+# Su misión es completar lo que esa función hace, el código
+# que deben desarrollar debe ir dentro de la función
+# como se detalla:
+
 def imprimir_mayor(numero_1, numero_2):
     print("Funcion imprimir mayor")
     # Alumno:

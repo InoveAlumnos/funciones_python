@@ -26,7 +26,8 @@ if __name__ == '__main__':
     
     numeros = [2, 4, 10, 8, 12, 6]
 
-    # Alumno: Crear la función "ordenar"
+    # Alumno: Crear la función "ordenar" fuera del bloque
+    # condicional principal (ver arriba los comentarios)
 
     # Generar una una nueva funcion que se llame "ordenar",
     # que utilizaremos para odernar la lista de numeros.
